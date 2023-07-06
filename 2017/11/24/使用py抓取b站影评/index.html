@@ -12,13 +12,13 @@
 <meta property="og:site_name" content="二月江北">
 <meta property="og:description" content="摘要上周末看了一部甲方乙方的电影，看完以后发现下面的影评挺多的，就想分析一下，这个电影大家评论最多的关键词是什么。既然这么想了那就下手呗，f12查看b站评论的请求接口，一不小心被我找到了，，，，，，那就请求这个接口呗，借用结巴分词和WordCloud词语，就是我想要的结果了。">
 <meta property="og:locale">
-<meta property="og:image" content="http://jiaxiaoxuan.top/images/blibli.png">
+<meta property="og:image" content="http://corpser.github.io/images/blibli.png">
 <meta property="article:published_time" content="2017-11-24T13:36:18.000Z">
-<meta property="article:modified_time" content="2023-07-06T05:10:27.205Z">
+<meta property="article:modified_time" content="2023-07-06T06:26:15.052Z">
 <meta property="article:author" content="二月江北">
 <meta property="article:tag" content="python">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http://jiaxiaoxuan.top/images/blibli.png">
+<meta name="twitter:image" content="http://corpser.github.io/images/blibli.png">
   
     <link rel="alternate" href="/atom.xml" title="二月江北" type="application/atom+xml">
   
@@ -93,8 +93,10 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="摘要"><a href="#摘要" class="headerlink" title="摘要"></a>摘要</h1><p>上周末看了一部甲方乙方的电影，看完以后发现下面的影评挺多的，就想分析一下，这个电影大家评论最多的关键词是什么。既然这么想了那就下手呗，f12查看b站评论的请求接口，一不小心被我找到了，，，，，，<br>那就请求这个接口呗，借用结巴分词和WordCloud词语，就是我想要的结果了。<br><a id="more"></a></p>
-<h1 id="效果图"><a href="#效果图" class="headerlink" title="效果图"></a>效果图</h1><p>当然话不多说，请看效果图<br><img src="http://jiaxiaoxuan.top/images/blibli.png" alt=""></p>
+        <h1 id="摘要"><a href="#摘要" class="headerlink" title="摘要"></a>摘要</h1><p>上周末看了一部甲方乙方的电影，看完以后发现下面的影评挺多的，就想分析一下，这个电影大家评论最多的关键词是什么。既然这么想了那就下手呗，f12查看b站评论的请求接口，一不小心被我找到了，，，，，，<br>那就请求这个接口呗，借用结巴分词和WordCloud词语，就是我想要的结果了。</p>
+<span id="more"></span>
+
+<h1 id="效果图"><a href="#效果图" class="headerlink" title="效果图"></a>效果图</h1><p>当然话不多说，请看效果图<br><img src="http://corpser.github.io/images/blibli.png"></p>
 <h1 id="具体代码"><a href="#具体代码" class="headerlink" title="具体代码"></a>具体代码</h1><pre><code>&quot;&quot;&quot;
 简单Python爬虫，抓取b站某个电影的评论数据，生成词云
 &quot;&quot;&quot;
@@ -178,7 +180,8 @@ if __name__ == &#39;__main__&#39;:
     plt.axis(&quot;off&quot;)
     plt.show()
     wordcloud.to_file(&#39;test.png&#39;)
-</code></pre><h1 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a>注意事项</h1><ul>
+</code></pre>
+<h1 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a>注意事项</h1><ul>
 <li>请求评论的接口，请注意计算分页的大小。</li>
 <li>使用WocrdCloud制作词语时，Linux系统一定要指定中文字体，不然人家不认识中文。Windows系统好像本来就是中文字体。。。</li>
 <li>别的就没什么要注意的了。</li>
